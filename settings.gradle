@@ -1,2 +1,2 @@
-include ':app'
+include ':app', ':learnbinder', ':libdubbing', ':dubbing'
 rootProject.name='StudyDemo'
