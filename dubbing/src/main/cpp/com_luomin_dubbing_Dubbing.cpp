@@ -100,7 +100,7 @@ JNIEXPORT jint JNICALL Java_com_luomin_dubbing_Dubbing_fdkdecodec
 
     UINT bytes_valid;
 
-    while (!feof(input_fp)) {
+//    while (!feof(input_fp)) {
         data_size = fread(aacbuffer + offset, 1, 1024 * 1024 - offset, input_fp);
         unsigned char *input_data = aacbuffer;
 
@@ -136,7 +136,7 @@ JNIEXPORT jint JNICALL Java_com_luomin_dubbing_Dubbing_fdkdecodec
                 size_t ws = fwrite(pcm_buffer, output_pcm_bytes, 1, output_fp);
             }
         }
-    }
+//    }
 
     free(aacbuffer);
     //    if(aacframe){
