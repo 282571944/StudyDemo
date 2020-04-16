@@ -9,6 +9,7 @@ import android.view.View;
 
 import com.luomin.dubbing.Dubbing;
 import com.luomin.learnbinder.MusicPlayerService;
+import com.luomin.learnwidget.DoubleSeekBar;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -39,5 +40,10 @@ public class MainActivity extends AppCompatActivity {
         });
 
 //        new MusicPlayerService();
+
+
+        doubleSeekBar = findViewById(R.id.doubleseek);
     }
+
+    private DoubleSeekBar doubleSeekBar;
 }
